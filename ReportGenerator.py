@@ -79,7 +79,7 @@ def create_warrant_pdf(warrant_type, officer_name, complaint_person, complaint_a
 
 # Streamlit app layout
 def main():
-    st.title("Warrant Generator")
+    st.title("Petition Generator")
 
     uploaded_pdf = st.file_uploader("Upload PDF Case File", type="pdf")
     if uploaded_pdf is not None:
@@ -115,8 +115,8 @@ def main():
             thing_specified, place_to_search
         )
         with open(pdf_path, "rb") as file:
-            st.success("Warrant PDF Generated!")
-            st.download_button("Download Warrant PDF", file.read(), file_name="warrant.pdf", mime="application/pdf")
+            st.success("Petiton Generated!")
+            st.download_button("Download Petition PDF", file.read(), file_name="warrant.pdf", mime="application/pdf")
         os.remove(pdf_path)  # clean up
 
 if __name__ == "__main__":
