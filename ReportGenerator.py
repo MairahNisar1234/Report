@@ -133,8 +133,7 @@ def main():
 
     # Footer section in Streamlit
     st.markdown("---")
-     Add the footer with fancy "HNM" initials
-st.markdown("""
+    st.markdown("""
     <style>
         .footer {
             position: fixed;
