@@ -86,10 +86,6 @@ def create_warrant_pdf(warrant_type, officer_name, complaint_person, complaint_a
 # Streamlit app layout
 def main():
     st.title("Petition Generator")
-
-    # Add Logo and Title
-    
-    st.markdown("<h1 style='text-align: center;'>Court Warrant Generator</h1>", unsafe_allow_html=True)
     st.markdown("---")
 
     uploaded_pdf = st.file_uploader("Upload PDF Case File", type="pdf")
