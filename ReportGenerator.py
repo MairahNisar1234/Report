@@ -88,7 +88,7 @@ def main():
     st.title("Petition Generator")
 
     # Add Logo and Title
-    st.image("legal_logo.png", width=100)  # Add your logo
+    
     st.markdown("<h1 style='text-align: center;'>Court Warrant Generator</h1>", unsafe_allow_html=True)
     st.markdown("---")
 
